@@ -382,22 +382,24 @@ if (p.x > 120 && p.x < 120+50 && p.y >113-50 && p.y < 113){
 //Back button Calibration
 if (p.x > 10 && p.x < 10+5 && p.y > 275-5 && p.y < 275){
   //image dimension = tft.fillTriangle(15,45 ,35,32 ,35,58, GREEN);
+  
   backbutton();
   //setting();
 setting();
 count=0;
+/*
     Serial.print("X=");
     Serial.println(p.x);
     Serial.print("Y=");
     Serial.println(p.y);
     Serial.print("press =");
     Serial.println("p.z");
-    delay(100);
+    delay(100);*/
 }
 // For Delete buttonCalibration
 if (p.x > 108 && p.x < 108+5 && p.y > 273-5 && p.y < 273){
   //image dimension = tft.fillRoundRect(10,80,35,35,5,BLUE);
-count=0;
+--count;
 deletecount();
 graph();
     Serial.print("X=");
